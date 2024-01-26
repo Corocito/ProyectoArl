@@ -18,7 +18,7 @@ namespace DotNetCoreRazor_MSGraph.Pages
     public class IndexModel : PageModel
     {
         private readonly GraphProfileClient _graphProfileClient;
-        public string UserDisplayName { get; private set; } = "";
+        public string UserDisplayName { get; private set; } = "";//nombre del Usuario Ofice 
         public string UserPhoto { get; private set; }
         readonly ITokenAcquisition _tokenAcquisition;
         readonly ILogger<IndexModel> _logger;

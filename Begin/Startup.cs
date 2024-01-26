@@ -67,8 +67,8 @@ namespace DotNetCoreRazor_MSGraph
                 .AddMicrosoftIdentityUI();
 
             services.AddScoped<GraphProfileClient>();
-            services.AddScoped<GraphEmailClient>();
-            services.AddScoped<GraphCalendarClient>();
+            //services.AddScoped<GraphEmailClient>();
+           // services.AddScoped<GraphCalendarClient>();
             services.AddScoped<GraphFilesClient>();
         }
 

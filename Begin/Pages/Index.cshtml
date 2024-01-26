@@ -5,7 +5,7 @@
 }
 
 <div>
-    <h1>ASP.NET Core and Microsoft Graph</h1>
+    <h1>Microsoft Graph</h1>
     <br />
     @if (User.Identity.IsAuthenticated)
     {
@@ -14,7 +14,7 @@
             {
                 <img src="data:image/jpeg;base64, @Model.UserPhoto" class="user-photo nav-profile-photo rounded-circle align-self-center mr-2" />
             }
-            Welcome @Model.UserDisplayName!</h4>
+            hola @Model.UserDisplayName!</h4>
     }
     else
     {

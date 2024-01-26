@@ -5,7 +5,7 @@
 }
  
 <div>
-    <h1>Files</h1>
+    <h1>Selección Archivos</h1>
     @if (User.Identity.IsAuthenticated) {
 
         <div>
@@ -31,19 +31,15 @@
         </div>
     
         <br /><br />
-        <h3>Upload File</h3>
+        <h3>Subir datos</h3>
         <hr />
         <form method="post" enctype="multipart/form-data">
             <input asp-for="UploadedFile" type="file">
-            <input type="submit" value="Upload File">
+            <input type="submit" value="Subir Arrchivo">
         </form>
     }
     else
     {
         <a class="btn btn-primary btn-large" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignIn">Click here to sign in</a>
     }
-
-    <br /><br />
-    Learn how to build this page by going through the <strong><a href="https://docs.microsoft.com/learn/paths/m365-msgraph-dotnetcore-scenarios/?WT.mc_id=m365-30352-cxa" target="_blank">Explore Microsoft Graph scenarios for ASP.NET Core development</a></strong> learning path on Microsoft Learn.
-
 </div>
